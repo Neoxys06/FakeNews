@@ -36,8 +36,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\affichage.cs" />
-     <Compile Include="Assets\marchePersonnage.cs" />
+     <Compile Include="Assets\script\UiAction.cs" />
+     <Compile Include="Assets\script\affichage.cs" />
      <Compile Include="Assets\script\marche.cs" />
      <Compile Include="Assets\script\marchePersonnage.cs" />
      <Compile Include="Assets\script\personnage.cs" />

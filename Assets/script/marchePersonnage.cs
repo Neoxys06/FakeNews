@@ -1,13 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class MarchePersonnage : MonoBehaviour
+public class marchePersonnage : MonoBehaviour
 {
     // Start is called before the first frame update
     public float speed = 5f;
     Rigidbody2D rb;
     Animator anim;
+    [SerializeField]
+    GameObject ImGameOver;
     void Start()
     {
       rb=GetComponent<Rigidbody2D>();
@@ -45,4 +48,13 @@ public class MarchePersonnage : MonoBehaviour
         anim.SetInteger("dir", 4);
       }
     }
+    public void GameOver(){
+      ImGameOver.SetActive(true);
+      StartCoroutine(LoadGameOver());
+    }
+    IEnumerator LoadGameOver(){
+      yield return new WaitForSeconds(3f);
+      SceneManager.LoadScene(0);
+    }
+
 }

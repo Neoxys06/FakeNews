@@ -23,11 +23,6 @@ public class ui : MonoBehaviour
             myTime.text="Time chronos : "+time;
 
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameObject.Find("Hori").GetComponent<marchePersonnage>().GameOver();
     }
 }
