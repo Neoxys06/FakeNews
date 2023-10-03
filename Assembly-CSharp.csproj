@@ -38,9 +38,14 @@
   <ItemGroup>
      <Compile Include="Assets\script\UiAction.cs" />
      <Compile Include="Assets\script\affichage.cs" />
+     <Compile Include="Assets\script\dialogue.cs" />
+     <Compile Include="Assets\script\level.cs" />
      <Compile Include="Assets\script\marche.cs" />
      <Compile Include="Assets\script\marchePersonnage.cs" />
+     <Compile Include="Assets\script\pause.cs" />
      <Compile Include="Assets\script\personnage.cs" />
+     <Compile Include="Assets\script\quete.cs" />
+     <Compile Include="Assets\script\sound.cs" />
      <Compile Include="Assets\script\ui.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

@@ -19,7 +19,7 @@ public class ui : MonoBehaviour
         while(time>0){
             yield return new WaitForSeconds(1f);
             time--;
-            Debug.Log("Minuterie du temps"+time);
+            
             myTime.text="Time chronos : "+time;
 
         }
