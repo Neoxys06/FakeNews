@@ -33,12 +33,14 @@ public class quete : MonoBehaviour
                 Destroy(activators[activ]);
                 Debug.Log("tokoss !!!!");
             }
+            if(activ==5){
+             GameObject.Find("Hori").GetComponent<marchePersonnage>().GameOver();
+            }
         }
     }
      private void OnCollisionEnter2D(Collision2D other) {
         if(other.collider.tag=="activator"){
              activ=other.gameObject.GetComponent<level>().queteLevel;
-             Dial.SetActive(true);
             myActivator(activ);
         }
         if(other.collider.tag=="quete" && activatorQuete==true){
@@ -89,6 +91,7 @@ public class quete : MonoBehaviour
                 Dial.SetActive(true);
                 titleUi.text=nameQuetes[quetec];
                 dialUi.text=congratulations[quetec];
+                audio.PlayOneShot(soundQuete);
                 countQuete++;
             }
         }
